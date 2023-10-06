@@ -9,8 +9,8 @@ import markdownItImsize from "markdown-it-imsize";
 
 import markdownItSpan from "./markdown-it-span";
 import markdownItTableContainer from "./markdown-it-table-container";
-// import markdownItLinkfoot from "./markdown-it-linkfoot";
-import markdownItFootNote from "markdown-it-footnote";
+import markdownItLinkfoot from "./markdown-it-linkfoot";
+// import markdownItFootNote from "markdown-it-footnote";
 import markdownItImageFlow from "./markdown-it-imageflow";
 import markdownItMultiquote from "./markdown-it-multiquote";
 import highlightjs from "./langHighlight";
@@ -83,7 +83,8 @@ markdownParser
   .use(markdownItSpan) // 在标题标签中添加span
   .use(markdownItTableContainer) // 在表格外部添加容器
   .use(markdownItMath) // 数学公式
-  .use(markdownItFootNote) // 修改脚注
+  .use(markdownItLinkfoot) // 修改脚注
+  // .use(markdownItFootNote) // 修改脚注
   .use(markdownItTableOfContents, {
     transformLink: () => "",
     includeLevel: [2, 3],
