@@ -9,7 +9,7 @@ import markdownItImsize from "markdown-it-imsize";
 
 import markdownItSpan from "./markdown-it-span";
 import markdownItTableContainer from "./markdown-it-table-container";
-import markdownItLinkfoot from "./markdown-it-linkfoot";
+import markdownItLinkfoot from "markdown-it-linkfoot";
 import markdownItImageFlow from "./markdown-it-imageflow";
 import markdownItMultiquote from "./markdown-it-multiquote";
 import highlightjs from "./langHighlight";
